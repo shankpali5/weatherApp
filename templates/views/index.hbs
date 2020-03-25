@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home</title>
+    <link rel="icon" href="/img/drizzle.svg">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="mainContent">
+        {{>header}}
+        <p>Fetch weather for address</p>
+        <form action="">
+            <input placeholder="Loction">
+            <button>Search</button>
+        </form>
+        <p id="result">Here is the result</p>
+    </div>
+
+    {{>footer}}
+
+    <script src="/js/app.js"></script>
+</body>
+
+</html>
