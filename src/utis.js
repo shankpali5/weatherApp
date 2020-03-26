@@ -17,7 +17,7 @@ function geocode(address, result) {
 
 function forecast(lat, lng, result) {
     const nxtUrl = darkSkyURL + lat + "," + lng + "?units=si"
-    getTemp("DarkSky", nxtUrl, (res) => result(res.currently.temperature))
+    getTemp("DarkSky", nxtUrl, (res) => result(res.currently.summary + " with temp " + res.currently.temperature))
 }
 
 function getTempForAddress(add, result) {
