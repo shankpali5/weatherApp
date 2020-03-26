@@ -1,7 +1,7 @@
 const path = require("path")
 const express = require("express")
 const hbs = require("hbs")
-const utils = require(path.join(__dirname, "../../weatherApp/utis"))
+const utils = require("./utis")
 
 const app = express()
 
