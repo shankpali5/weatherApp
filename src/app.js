@@ -4,6 +4,7 @@ const hbs = require("hbs")
 const utils = require("./utis")
 
 const app = express()
+const port = process.env.PORT || 3000
 
 // paths
 const staticPath = path.join(__dirname, "../public")
@@ -22,8 +23,8 @@ hbs.registerPartials(partialsPath)
 app.use(express.static(staticPath))
 
 // Listen
-app.listen(3000, () => {
-    console.log("Server Started on 3000")
+app.listen(port, () => {
+    console.log("Server Started on " + port)
 })
 
 //Get

@@ -11,7 +11,7 @@ weatherForm.addEventListener("submit", (e) => {
 
 function fetchReportForLocation(loc) {
     result.textContent = "Loading..."
-    fetch("http://localhost:3000/weather?add=" + loc).then((res) => {
+    fetch("/weather?add=" + loc).then((res) => {
         res.json().then(({ report }) => {
             result.textContent = report + "ºC"
         })
